@@ -1,0 +1,70 @@
+$date
+	Tue Nov 26 08:44:36 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench_bitparidade $end
+$var wire 1 ! saida $end
+$var reg 1 " B1 $end
+$var reg 1 # B2 $end
+$var reg 1 $ B3 $end
+$var reg 1 % B4 $end
+$var reg 1 & B5 $end
+$var reg 1 ' bitparidade $end
+$scope module uut $end
+$var wire 1 " B1 $end
+$var wire 1 # B2 $end
+$var wire 1 $ B3 $end
+$var wire 1 % B4 $end
+$var wire 1 & B5 $end
+$var wire 1 ' bitparidade $end
+$var reg 1 ! saida $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#10
+1'
+1&
+1%
+1$
+1#
+1"
+#20
+0!
+0'
+0%
+0#
+#30
+1!
+1'
+0&
+1%
+#40
+0%
+0$
+#50
+0'
+1#
+#60
+0!
+1%
+1$
+0#
+#70
