@@ -21,13 +21,13 @@ module boolean_expression_initial (
     always @(*) begin
         if (saida == 1'b1) begin
             // Expressões booleanas para LEDs (Y1 a Y7)
-            Y1 <= (~B2 & ~B3 & ~B4 & ~B5) | (~B1 & ~B4 & B5) | (~B2 & B4 & B5) | (B3 & B4) | (B1 & ~B5);
-            Y2 <= (~B2 & ~B4) | (~B2 & ~B5) | (~B3 & ~B5 & ~B4) | (B2 & B3 & B5) | (B1);
-            Y3 <= (~B4 & B5) | (~B2 & B4 & ~B5) | (B3) | (B2 & ~B4) | (B2 & B5) | (B1);
-            Y4 <= (B4 & ~B5) | (B3 & ~B4 & B5) | (B2 & B5) | (B1);
-            Y5 <= (~B1 & ~B2) | (~B1 & ~B3 & ~B5) | (~B2 & B4 & ~B5) | (~B1 & B4 & B5);
-            Y6 <= (~B1 & ~B2 & ~B4) | (~B2 & ~B3 & B5) | (~B4 & B5) | (B3 & B4 & ~B5) | (B2 & ~B3 & ~B5) | (B2 & B3 & ~B4) | (B1 & B4);
-            Y7 <= (~B2 & ~B3) | ~B4 | (B2 & B3 & ~B5);
+            Y1 = (~B2 & ~B3 & ~B4 & ~B5) | (~B1 & ~B4 & B5) | (~B2 & B4 & B5) | (B3 & B4) | (B1 & ~B5);
+            Y2 = (~B2 & ~B4) | (~B2 & ~B5) | (~B3 & ~B5 & ~B4) | (B2 & B3 & B5) | (B1);
+            Y3 = (~B4 & B5) | (~B2 & B4 & ~B5) | (B3) | (B2 & ~B4) | (B2 & B5) | (B1);
+            Y4 = (B4 & ~B5) | (B3 & ~B4 & B5) | (B2 & B5) | (B1);
+            Y5 = (~B1 & ~B2) | (~B1 & ~B3 & ~B5) | (~B2 & B4 & ~B5) | (~B1 & B4 & B5);
+            Y6 = (~B1 & ~B2 & ~B4) | (~B2 & ~B3 & B5) | (~B4 & B5) | (B3 & B4 & ~B5) | (B2 & ~B3 & ~B5) | (B2 & B3 & ~B4) | (B1 & B4);
+            Y7 = (~B2 & ~B3) | ~B4 | (B2 & B3 & ~B5);
         end else begin
             // Valores padrão quando `saida` é 0
             Y1 = 1'b0;
